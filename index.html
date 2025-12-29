@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CPU Scheduling Visual Simulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>CPU Scheduling Visual Simulator</h2>
+  <p>Visualization of CPU Scheduling Algorithms</p>
+
+  <button onclick="loadSameCase(); runFCFS();">FCFS – Same Case</button>
+  <button onclick="loadSameCase(); runSJF();">SJF – Same Case</button>
+
+  <button onclick="loadDifferentCase(); runFCFS();">FCFS – Different Case</button>
+  <button onclick="loadDifferentCase(); runSJF();">SJF – Different Case</button>
+
+  <button onclick="runRR()">Round Robin</button>
+  <button onclick="resetTable()">Reset Table</button>
+  <table>
+    <thead>
+      <tr>
+        <th>Process</th>
+        <th>Arrival Time</th>
+        <th>Burst Time</th>
+        <th>Waiting Time</th>
+        <th>Turnaround Time</th>
+      </tr>
+    </thead>
+    <tbody id="output"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
