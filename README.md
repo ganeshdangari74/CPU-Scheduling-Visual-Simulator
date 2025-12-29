@@ -134,4 +134,3 @@ This project is open-source and intended for educational use.
 ## Author
 
 **Ganesh Dangari**
- ( Computer Science Student )
